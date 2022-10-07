@@ -1,21 +1,23 @@
 package de.zorro909.discordnotifier.client;
 
-import io.micronaut.runtime.EmbeddedApplication;
-import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Assertions;
-
 import jakarta.inject.Inject;
+import org.junit.jupiter.api.Test;
 
-@MicronautTest
+import static org.junit.jupiter.api.Assertions.*;
+
 class DiscordNotifierClientTest {
 
     @Inject
-    EmbeddedApplication<?> application;
+    private DiscordNotifierClient discordNotifierClient;
 
     @Test
-    void testItWorks() {
-        Assertions.assertTrue(application.isRunning());
+    void submitNotification() {
+
+    }
+
+    @Test
+    void notificationStatus() {
+
     }
 
 }
